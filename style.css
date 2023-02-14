@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+:root {
+  --yellow: #f7bc32;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  background-color: #0e2749;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  background-image: url(/img/pexels-jess-loiterton-4784226.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+}
+body .header {
+  height: 75px;
+  width: 80%;
+  background-image: url(/img/logo_antares.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 1.5rem;
+}
+body .cards-section {
+  margin-top: 1rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+body .cards-section h1 {
+  font-family: "Pangolin", cursive;
+  text-align: center;
+  color: white;
+}
+body .cards-section .cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+body .cards-section .cards .card {
+  height: 200px;
+  width: 40%;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-image: url(/img/low-poly-background-A8_generated.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 2px 2px gold;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+body .cards-section .cards .card a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body .cards-section .cards .card .card-title {
+  margin-top: -30px;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body .cards-section .cards .card .juicy {
+  background-image: url(/img/juici-title.png);
+}
+body .cards-section .cards .card .kolsch {
+  background-image: url(/img/kolsch-title.png);
+}
+body .cards-section .cards .card .indian {
+  background-image: url(/img/indian-title.png);
+}
+body .cards-section .cards .card .honey {
+  background-image: url(/img/honey-title.png);
+}
+body .cards-section .cards .card .beer-img {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .cards-section .cards .card .juicy-img {
+  background-image: url(/img/juicy-img.png);
+}
+body .cards-section .cards .card .kolsch-img {
+  background-image: url(/img/kolsch-img.png);
+}
+body .cards-section .cards .card .indian-img {
+  background-image: url(/img/indian-img.png);
+}
+body .cards-section .cards .card .honey-img {
+  background-image: url(/img/honey-img.png);
+}
+body .itemDetail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .itemDetail .title {
+  height: 200px;
+  width: 60%;
+  background-image: url(/img/header-detail.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .itemDetail .title .card-title {
+  width: 80%;
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body .itemDetail .title .indian {
+  background-image: url(/img/indian-title.png);
+}
+body .itemDetail .pizarra {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body .itemDetail .pizarra .beer-img {
+  width: 33%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/img/indian-img.png);
+}
+body .itemDetail .pizarra .chart {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .itemDetail .pizarra .chart h1 {
+  font-family: "Pangolin", cursive;
+  color: white;
+}
+body .itemDetail .pizarra .chart h2 {
+  font-size: 1rem;
+  margin-top: -1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #393835;
+}
+body .itemDetail .pizarra .chart .chart-detail {
+  padding: 5px;
+  margin-top: 1rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/img/chart-detail-img.png);
+}
+body .itemDetail .pizarra .chart .chart-detail .chart-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/img/amargor-img.png);
+  height: 50px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+body .itemDetail .pizarra .chart .left {
+  background-image: url(/img/chart-detail-img-left.png);
+}
+body .itemDetail .item-detail-bottom {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .itemDetail .item-detail-bottom .hops-header {
+  z-index: 2;
+  width: 100%;
+  height: 100px;
+  background-image: url(/img/chart-hops.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .itemDetail .item-detail-bottom .bottom-frame {
+  margin-top: -80px;
+  width: 90%;
+  border: 5px solid var(--yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .itemDetail .item-detail-bottom .bottom-frame .chart-bottom {
+  margin: 1rem;
+  height: auto;
+  width: 95%;
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body .itemDetail .item-detail-bottom .bottom-frame .chart-bottom h4 {
+  font-family: "Pangolin", cursive;
+  color: #363636;
+  width: 50%;
+  padding-top: 2rem;
+}
+body .itemDetail .item-detail-bottom .bottom-frame .chart-bottom .description {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  padding-bottom: 1rem;
+}
+body .itemDetail .item-detail-bottom .bottom-frame .chart-bottom .description h3 {
+  font-family: "Pangolin", cursive;
+  color: #363636;
+  width: 50%;
+  text-align: center;
+}
+body .itemDetail .item-detail-bottom .bottom-frame .chart-bottom .description p {
+  margin-top: -1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+body .itemDetail .item-detail-bottom .bottom-frame .chart-bottom .description iframe {
+  align-self: center;
+}/*# sourceMappingURL=style.css.map */
