@@ -20,7 +20,7 @@ body .background {
   z-index: -1;
   height: 100vh;
   width: 100%;
-  background-image: url(/img/pexels-jess-loiterton-4784226.jpg);
+  background-image: url(./img/pexels-jess-loiterton-4784226.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   filter: blur(3px);
@@ -28,7 +28,7 @@ body .background {
 body .header {
   height: 75px;
   width: 80%;
-  background-image: url(/img/logo_antares.png);
+  background-image: url(./img/logo_antares.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -56,7 +56,7 @@ body .cards-section .cards .card {
   width: 40%;
   margin-top: 1rem;
   padding: 1rem;
-  background-image: url(/img/low-poly-background-A8_generated.jpg);
+  background-image: url(./img/low-poly-background-A8_generated.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -82,16 +82,16 @@ body .cards-section .cards .card .card-title {
   background-size: contain;
 }
 body .cards-section .cards .card .juicy {
-  background-image: url(/img/juici-title.png);
+  background-image: url(./img/juici-title.png);
 }
 body .cards-section .cards .card .kolsch {
-  background-image: url(/img/kolsch-title.png);
+  background-image: url(./img/kolsch-title.png);
 }
 body .cards-section .cards .card .indian {
-  background-image: url(/img/indian-title.png);
+  background-image: url(./img/indian-title.png);
 }
 body .cards-section .cards .card .honey {
-  background-image: url(/img/honey-title.png);
+  background-image: url(./img/honey-title.png);
 }
 body .cards-section .cards .card .beer-img {
   width: 100%;
@@ -101,16 +101,16 @@ body .cards-section .cards .card .beer-img {
   background-position: center;
 }
 body .cards-section .cards .card .juicy-img {
-  background-image: url(/img/juicy-img.png);
+  background-image: url(./img/juicy-img.png);
 }
 body .cards-section .cards .card .kolsch-img {
-  background-image: url(/img/kolsch-img.png);
+  background-image: url(./img/kolsch-img.png);
 }
 body .cards-section .cards .card .indian-img {
-  background-image: url(/img/indian-img.png);
+  background-image: url(./img/indian-img.png);
 }
 body .cards-section .cards .card .honey-img {
-  background-image: url(/img/honey-img.png);
+  background-image: url(./img/honey-img.png);
 }
 body .itemDetail {
   width: 100%;
@@ -122,7 +122,7 @@ body .itemDetail {
 body .itemDetail .title {
   height: 200px;
   width: 60%;
-  background-image: url(/img/header-detail.png);
+  background-image: url(./img/header-detail.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -138,7 +138,7 @@ body .itemDetail .title .card-title {
   background-size: contain;
 }
 body .itemDetail .title .indian {
-  background-image: url(/img/indian-title.png);
+  background-image: url(./img/indian-title.png);
 }
 body .itemDetail .pizarra {
   width: 100%;
@@ -154,7 +154,7 @@ body .itemDetail .pizarra .beer-img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(/img/indian-img.png);
+  background-image: url(./img/indian-img.png);
 }
 body .itemDetail .pizarra .chart {
   width: 33%;
@@ -183,19 +183,19 @@ body .itemDetail .pizarra .chart .chart-detail {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(/img/chart-detail-img.png);
+  background-image: url(./img/chart-detail-img.png);
 }
 body .itemDetail .pizarra .chart .chart-detail .chart-img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(/img/amargor-img.png);
+  background-image: url(./img/amargor-img.png);
   height: 50px;
   width: 100%;
   margin-bottom: 1rem;
 }
 body .itemDetail .pizarra .chart .left {
-  background-image: url(/img/chart-detail-img-left.png);
+  background-image: url(./img/chart-detail-img-left.png);
 }
 body .itemDetail .item-detail-bottom {
   margin-top: 2rem;
@@ -208,7 +208,7 @@ body .itemDetail .item-detail-bottom .hops-header {
   z-index: 2;
   width: 100%;
   height: 100px;
-  background-image: url(/img/chart-hops.png);
+  background-image: url(./img/chart-hops.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

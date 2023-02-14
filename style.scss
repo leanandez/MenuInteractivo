@@ -23,7 +23,7 @@ body {
         z-index: -1;
         height: 100vh;
         width: 100%;
-        background-image: url(/img/pexels-jess-loiterton-4784226.jpg);
+        background-image: url(./img/pexels-jess-loiterton-4784226.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         filter: blur(3px);
@@ -33,7 +33,7 @@ body {
     .header {
         height: 75px;
         width: 80%;
-        background-image: url(/img/logo_antares.png);
+        background-image: url(./img/logo_antares.png);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -66,7 +66,7 @@ body {
                 width: 40%;
                 margin-top: 1rem;
                 padding: 1rem;
-                background-image: url(/img/low-poly-background-A8_generated.jpg);
+                background-image: url(./img/low-poly-background-A8_generated.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -95,19 +95,19 @@ body {
                 }
 
                 .juicy {
-                    background-image: url(/img/juici-title.png);
+                    background-image: url(./img/juici-title.png);
                 }
 
                 .kolsch {
-                    background-image: url(/img/kolsch-title.png);
+                    background-image: url(./img/kolsch-title.png);
                 }
 
                 .indian {
-                    background-image: url(/img/indian-title.png);
+                    background-image: url(./img/indian-title.png);
                 }
 
                 .honey {
-                    background-image: url(/img/honey-title.png);
+                    background-image: url(./img/honey-title.png);
                 }
 
                 .beer-img {
@@ -119,19 +119,19 @@ body {
                 }
 
                 .juicy-img {
-                    background-image: url(/img/juicy-img.png);
+                    background-image: url(./img/juicy-img.png);
                 }
 
                 .kolsch-img {
-                    background-image: url(/img/kolsch-img.png);
+                    background-image: url(./img/kolsch-img.png);
                 }
 
                 .indian-img {
-                    background-image: url(/img/indian-img.png);
+                    background-image: url(./img/indian-img.png);
                 }
 
                 .honey-img {
-                    background-image: url(/img/honey-img.png);
+                    background-image: url(./img/honey-img.png);
                 }
 
             }
@@ -154,7 +154,7 @@ body {
         .title {
             height: 200px;
             width: 60%;
-            background-image: url(/img/header-detail.png);
+            background-image: url(./img/header-detail.png);
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
@@ -171,13 +171,13 @@ body {
             }
 
             .indian {
-                background-image: url(/img/indian-title.png);
+                background-image: url(./img/indian-title.png);
             }
 
         }
 
         .pizarra {
-            // background-image: url(/img/ipa-fondo.png);
+            // background-image: url(./img/ipa-fondo.png);
             // background-size: cover;
             // background-repeat: no-repeat;
             // background-position: center;
@@ -196,7 +196,7 @@ body {
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
-                background-image: url(/img/indian-img.png);
+                background-image: url(./img/indian-img.png);
 
             }
 
@@ -230,13 +230,13 @@ body {
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center;
-                    background-image: url(/img/chart-detail-img.png);
+                    background-image: url(./img/chart-detail-img.png);
 
                     .chart-img {
                         background-size: contain;
                         background-repeat: no-repeat;
                         background-position: center;
-                        background-image: url(/img/amargor-img.png);
+                        background-image: url(./img/amargor-img.png);
                         height: 50px;
                         width: 100%;
                         margin-bottom: 1rem;
@@ -245,7 +245,7 @@ body {
                 }
 
                 .left {
-                    background-image: url(/img/chart-detail-img-left.png);
+                    background-image: url(./img/chart-detail-img-left.png);
                 }
             }
         }
@@ -261,7 +261,7 @@ body {
                 z-index: 2;
                 width: 100%;
                 height: 100px;
-                background-image: url(/img/chart-hops.png);
+                background-image: url(./img/chart-hops.png);
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -283,7 +283,7 @@ body {
                     // background-size: contain;
                     // background-repeat: no-repeat;
                     // background-position: top;
-                    // background-image: url(/img/chart-bottom.png);
+                    // background-image: url(./img/chart-bottom.png);
                     background-color: var(--yellow);
                     display: flex;
                     flex-direction: column;
