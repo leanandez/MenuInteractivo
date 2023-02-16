@@ -16,6 +16,80 @@ body {
     align-items: center;
     justify-content: center;
 
+    //Side Bar
+
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 6;
+        top: 0;
+        left: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+            padding-bottom: 1rem;
+            text-decoration: none;
+            font-size: 20px;
+            text-align: center;
+            color: black;
+            transition: 0.3s;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+            .nav-logo {
+                height: 100px;
+                width: 180px;
+                background-image: url(./img/logo_antares_negro.png);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            &:active {
+                color: blue;
+            }
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+    }
+
+    #openBtn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        align-self: flex-start;
+        transition: opacity .5s;
+        padding-left: 10px;
+
+        .openbtn {
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color:transparent;
+            color: white;
+            padding: 5px;
+            border: none;      
+        }
+        .openbtn:hover {
+            background-color: #444;
+        }
+    }
+    ///Fin Side Bar
+
+
 
     .background {
         position: fixed;
@@ -117,7 +191,6 @@ body {
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center;
-
                 }
 
                 .juicy-img {
@@ -135,17 +208,12 @@ body {
                 .honey-img {
                     background-image: url(./img/honey-img.png);
                 }
-
             }
-
-
         }
-
-
-
     }
 
     .itemDetail {
+        margin-top: 1rem;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -166,7 +234,8 @@ body {
             text-align: justify;
             color: white;
             display: none;
-            .modal-hop{
+
+            .modal-hop {
                 position: absolute;
                 top: -10%;
                 z-index: 5;
@@ -428,9 +497,15 @@ body {
                             font-size: 14px;
                         }
 
-                        iframe {
+                        #video{
+                            
+                            width: 100%;
+                            height: 100%;
+                             iframe {
                             align-self: center;
                         }
+                        }
+                       
                     }
                 }
             }
