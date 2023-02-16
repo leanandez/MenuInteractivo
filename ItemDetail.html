@@ -10,34 +10,70 @@
 </head>
 
 <body>
+
     <div class="background"></div>
-    <!-- <section class="header"></section> -->
     <section class="itemDetail">
+        <div class="modal" id="modal">
+            <div class="modal-hop"></div>
+            <div class="modal-frame">
+                <div class="modal-body">
+                    <h1>IBU</h1>
+                    <p>IBU es un acrónimo que quiere decir en inglés INTERNATIONAL BITTERNESS UNITS (también nombrado
+                        como International Bittering Unit ). Es decir, es la Unidad Internacional de amargor, una escala
+                        para medir la percepción del amargor de la cerveza.
+                        Exactamente, el IBU mide la cantidad de alfa ácidos isomerizados durante el hervido del mosto.
+                        Los isohumulones son un tipo de alfa ácidos, presentes en el lúpulo. Ellos contribuyen a la hora
+                        de proporcionar amargor a la cerveza, pero no son los únicos responsables. El resultado del IBU
+                        se completa con ecuaciones en los que intervienen el tipo de lúpulo (y su edad), el tiempo de
+                        cocción y la forma de «cocinarlo», temperatura, nivel de atenuación de la levadura…
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos iusto doloremque
+                        quos enim quas aspernatur cupiditate odit culpa voluptatum suscipit ipsum, quia in itaque error
+                        deserunt quae! Facilis odio, eveniet omnis illo praesentium autem. Fugit iure vero blanditiis
+                        est?
+                    </p>
+                    <button id="backBtn">VOLVER</button>
+                </div>
+            </div>
+
+        </div>
         <div class="title">
             <div class="card-title indian"></div>
         </div>
         <div class="pizarra">
             <div class="chart">
-                <div class="chart-detail left">
+                <div class="chart-cardflip" id="cardBtn" ">
+                    <div class=" card-front left-1">
                     <h1>58</h1>
                     <h2>IBU</h2>
                 </div>
-                <div class="chart-detail left">
+                <div class="card-back card-back-left left-1"></div>
+            </div>
+            <div class="chart-cardflip" id="cardBtn">
+                <div class="card-front left-2">
                     <h1>6,6%</h1>
                     <h2>Alcohol</h2>
                 </div>
+                <div class="card-back card-back-left left-2"></div>
             </div>
-            <div class="beer-img"></div>
-            <div class="chart">
-                <div class="chart-detail">
+        </div>
+        <div class="beer-img"></div>
+        <div class="chart">
+            <div class="chart-cardflip" id="cardBtn">
+                <div class="card-front card-front-right right-1">
                     <div class="chart-img"></div>
                     <h2>Amargor</h2>
                 </div>
-                <div class="chart-detail">
+                <div class="card-back right-1"></div>
+            </div>
+            <div class="chart-cardflip" id="cardBtn">
+                <div class="card-front card-front-right right-2">
                     <h1>1060</h1>
                     <h2>O.G.</h2>
                 </div>
+                <div class="card-back right-2"></div>
             </div>
+
+        </div>
         </div>
 
         <section class="item-detail-bottom">
@@ -56,7 +92,10 @@
                         <h3>Maridaje</h3>
                         <p>Pizza / Platos picantes y especiados / Comida India</p>
                         <h3>¡Así la fabricamos!</h3>
-                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-dQrMc9VD6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-dQrMc9VD6A"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                     </div>
 
                 </div>
@@ -67,7 +106,7 @@
 
     </section>
 
-
+    <script src="app.js"></script>
 </body>
 
 </html>

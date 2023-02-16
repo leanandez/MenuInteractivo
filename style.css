@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
 :root {
   --yellow: #f7bc32;
+  --brown: #363636 ;
 }
 
 body {
@@ -119,6 +120,62 @@ body .itemDetail {
   justify-content: center;
   align-items: center;
 }
+body .itemDetail .modal {
+  position: absolute;
+  width: 90%;
+  height: 90vh;
+  top: 5%;
+  left: 5%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  color: white;
+  display: none;
+}
+body .itemDetail .modal .modal-hop {
+  position: absolute;
+  top: -10%;
+  z-index: 5;
+  width: 100%;
+  height: 100px;
+  background-image: url(./img/modal-hop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .itemDetail .modal .modal-frame {
+  height: 100%;
+  width: 100%;
+  border: 5px solid var(--brown);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .itemDetail .modal .modal-frame .modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 2rem;
+  height: 80%;
+  width: 80%;
+  overflow-y: auto;
+  background-color: var(--brown);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Pangolin", cursive;
+  font-size: 16px;
+}
+body .itemDetail .modal .modal-frame .modal-body button {
+  width: 100%;
+  height: 100%;
+  background-color: var(--yellow);
+}
+body .itemDetail .showModal {
+  display: flex;
+}
 body .itemDetail .title {
   height: 200px;
   width: 60%;
@@ -173,19 +230,32 @@ body .itemDetail .pizarra .chart h2 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #393835;
 }
-body .itemDetail .pizarra .chart .chart-detail {
-  padding: 5px;
-  margin-top: 1rem;
-  height: 100%;
-  width: 100%;
+body .itemDetail .pizarra .chart .chart-cardflip {
+  position: relative;
+  width: 50%;
+  height: 110px;
   display: flex;
   flex-direction: column;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(./img/chart-detail-img.png);
+  align-items: center;
+  justify-content: center;
 }
-body .itemDetail .pizarra .chart .chart-detail .chart-img {
+body .itemDetail .pizarra .chart .chart-cardflip .card-front,
+body .itemDetail .pizarra .chart .chart-cardflip .card-back {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  position: absolute;
+  background-image: url(./img/chart-detail-img-left.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+body .itemDetail .pizarra .chart .chart-cardflip .card-front-right {
+  background-image: url(./img/chart-detail-img-right.png);
+}
+body .itemDetail .pizarra .chart .chart-cardflip .card-front-right .chart-img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -194,8 +264,31 @@ body .itemDetail .pizarra .chart .chart-detail .chart-img {
   width: 100%;
   margin-bottom: 1rem;
 }
-body .itemDetail .pizarra .chart .left {
-  background-image: url(./img/chart-detail-img-left.png);
+body .itemDetail .pizarra .chart .chart-cardflip .card-front {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: card-front-rotation 4s linear infinite;
+}
+body .itemDetail .pizarra .chart .chart-cardflip .card-back {
+  transform: rotateY(180deg);
+  background-image: url(./img/chart-detail-img-right-back.png);
+  animation: card-back-rotation 4s linear infinite;
+}
+body .itemDetail .pizarra .chart .chart-cardflip .card-back-left {
+  background-image: url(./img/chart-detail-img-left-back.png);
+}
+body .itemDetail .pizarra .chart .chart-cardflip .right-2 {
+  animation-delay: 1s;
+}
+body .itemDetail .pizarra .chart .chart-cardflip .right-1 {
+  animation-delay: 2s;
+}
+body .itemDetail .pizarra .chart .chart-cardflip .left-2 {
+  animation-delay: 3s;
 }
 body .itemDetail .item-detail-bottom {
   margin-top: 2rem;
@@ -259,4 +352,53 @@ body .itemDetail .item-detail-bottom .bottom-frame .chart-bottom .description p 
 }
 body .itemDetail .item-detail-bottom .bottom-frame .chart-bottom .description iframe {
   align-self: center;
+}
+
+@keyframes charts-animation {
+  0% {
+    transform: rotateX(0);
+    filter: hue-rotate(0deg);
+  }
+  6% {
+    transform: rotateX(90deg);
+  }
+  12% {
+    transform: rotateX(0deg);
+    filter: hue-rotate(-30deg);
+  }
+  18% {
+    transform: rotateX(-10deg);
+  }
+  25% {
+    transform: rotateZ(0);
+    filter: hue-rotate(0deg);
+  }
+}
+@keyframes card-front-rotation {
+  0% {
+    transform: rotateY(0);
+  }
+  12% {
+    transform: rotateY(180deg);
+  }
+  20% {
+    transform: rotateY(180deg);
+  }
+  25% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes card-back-rotation {
+  0% {
+    transform: rotateY(180deg);
+  }
+  8% {
+    transform: rotateY(0deg);
+  }
+  16% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(180deg);
+  }
 }/*# sourceMappingURL=style.css.map */
