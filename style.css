@@ -540,6 +540,7 @@ body .home .historia .historia-png {
   left: 0;
   z-index: 7;
   opacity: 1;
+  animation: hideIntro 5s linear forwards;
 }
 
 #mug {
@@ -658,6 +659,20 @@ body .home .historia .historia-png {
   background-position: center;
 }
 
+@keyframes hideIntro {
+  0% {
+    opacity: 1;
+    z-index: 7;
+  }
+  99% {
+    opacity: 1;
+    z-index: 7;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
 @keyframes fill-beer {
   0% {
     height: 0;
