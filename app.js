@@ -1,4 +1,11 @@
 
+  //Intro de la Web
+   setTimeout(function() {
+     document.getElementById("intro-section").style.opacity = "0";
+     document.getElementById("intro-section").style.zIndex="-2"
+ }, 5000);
+
+
 const modal = document.getElementById("modal")
 const cardBtn = document.getElementsByClassName("chart-cardflip")
 const backBtn = document.getElementById("backBtn")
@@ -40,3 +47,19 @@ function openNav() {
     document.getElementById("video").style.width="90vw"
     document.getElementById("video").style.height="90vw"
   }
+
+  //Funcion para Links del home
+
+  function cerveza(){
+    window.location.href="./nuestras-cervezas.html"
+  }
+  
+
+
+
+
+
+
+
+
+

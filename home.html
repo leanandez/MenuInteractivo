@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HOME</title>
+</head>
+
+<body>
+
+    <!-- Animación Intro -->
+    <section class="intro" id="intro-section" >
+        <div class="logo-intro"></div>
+        <div id="mug">
+            <div id="beer-intro">
+                <div class="bubbles top-glass-bubble-1"></div>
+                <div class="bubbles top-glass-bubble-2"></div>
+                <div class="bubbles top-glass-bubble-3"></div>
+                <div class="bubbles top-glass-bubble-4"></div>
+                <div class="bubbles top-air-bubble-1"></div>
+                <div class="bubbles top-air-bubble-2"></div>
+                <div class="bubbles vertical-glass-bubble-1"></div>
+                <div class="bubbles vertical-glass-bubble-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fin Animacion Intro -->
+
+
+
+    <!-- NavBar -->
+    <div class="sidebar" id="mySidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">
+            <div class="nav-logo"></div>
+        </a>
+        <a href="./home.html">HOME</a>
+        <a href="./nuestras-cervezas.html">NUESTRAS CERVEZAS</a>
+        <a href="#">HISTORIA</a>
+    </div>
+    <div id="openBtn">
+        <button class="openbtn" onclick="openNav()">☰</button>
+    </div>
+    <!-- END NavBar -->
+
+
+    <section class="home">
+        <div class="home-section cervezas" id="nuestras-cervezas" onclick="cerveza()">
+            <div class="cervezas-png"></div>
+            <h4>Nuestras</h4>
+            <h1>Cervezas</h1>
+        </div>
+        <div class="home-section maltas" id="nuestras-maltas" onclick="cerveza()">
+            <div class="maltas-png"></div>
+            <h4>Nuestras</h4>
+            <h1>Maltas</h1>
+        </div>
+        <div class="home-section historia" id="nuestra-historia" onclick="cerveza()">
+            <div class="historia-png"></div>
+            <h4>Nuestra</h4>
+            <h1>Historia</h1>
+        </div>
+    </section>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

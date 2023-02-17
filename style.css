@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 :root {
   --yellow: #f7bc32;
   --brown: #363636 ;
@@ -420,6 +421,62 @@ body .itemDetail .item-detail-bottom .bottom-frame .chart-bottom .description #v
 body .itemDetail .item-detail-bottom .bottom-frame .chart-bottom .description #video iframe {
   align-self: center;
 }
+body .home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body .home .home-section {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 33%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+  padding-top: 1rem;
+}
+body .home .home-section h4 {
+  margin-bottom: -1.3rem;
+}
+body .home .cervezas {
+  background-image: url(./img/home-ocean.png);
+}
+body .home .cervezas .cervezas-png {
+  background-image: url(./img/home-beers.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30%;
+  width: 30%;
+}
+body .home .maltas {
+  background-image: url(./img/home-sierras.png);
+}
+body .home .maltas .maltas-png {
+  background-image: url(./img/home-malts.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30%;
+  width: 30%;
+}
+body .home .historia {
+  background-image: url(./img/home-mdq.png);
+}
+body .home .historia .historia-png {
+  background-image: url(./img/home-history.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30%;
+  width: 30%;
+}
 
 @keyframes charts-animation {
   0% {
@@ -467,5 +524,189 @@ body .itemDetail .item-detail-bottom .bottom-frame .chart-bottom .description #v
   }
   25% {
     transform: rotateY(180deg);
+  }
+}
+.intro {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  opacity: 1;
+}
+
+#mug {
+  position: relative;
+  height: 200px;
+  width: 100px;
+  border: 8px solid white;
+  border-radius: 0 0 20% 20%/0 0 15% 15%;
+}
+
+#mug::before {
+  content: "";
+  height: 60%;
+  width: 25%;
+  border: 8px solid white;
+  position: absolute;
+  left: 100%;
+  top: 15%;
+  border-radius: 0 50% 50% 0/0 12% 12% 0;
+}
+
+#beer-intro {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffd54f;
+  border-radius: 0 0 15% 15%/0 0 10% 10%;
+  animation: fill-beer 1s linear forwards;
+}
+
+.bubbles {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.top-glass-bubble-1 {
+  height: 45px;
+  width: 65px;
+  left: -15%;
+  top: -10%;
+  opacity: 0;
+  animation: show-bubbles 0.8s linear 1.2s forwards;
+}
+
+.top-glass-bubble-2 {
+  height: 45px;
+  width: 65px;
+  left: 5%;
+  top: -18%;
+  opacity: 0;
+  animation: show-bubbles 0.8s linear 1.2s forwards;
+}
+
+.top-glass-bubble-3 {
+  height: 55px;
+  width: 50px;
+  left: 43%;
+  top: -17%;
+  opacity: 0;
+  animation: show-bubbles 0.8s linear 1.2s forwards;
+}
+
+.top-glass-bubble-4 {
+  height: 31px;
+  width: 35px;
+  left: 80%;
+  top: -10%;
+  opacity: 0;
+  animation: show-bubbles 0.8s linear 1.2s forwards;
+}
+
+.top-air-bubble-1 {
+  opacity: 0;
+  height: 15px;
+  width: 15px;
+  left: 90%;
+  animation: show-air-bubble-1 2s linear 2s forwards;
+}
+
+.top-air-bubble-2 {
+  opacity: 0;
+  height: 20px;
+  width: 20px;
+  left: 60%;
+  top: -30%;
+  animation: show-air-bubble-2 2s linear 2s forwards;
+}
+
+.vertical-glass-bubble-1 {
+  width: 25px;
+  top: 0;
+  left: -12%;
+  border-radius: 0 0 60% 10%/0 0 25% 20%;
+  animation: show-vertical-bubbles-1 2s linear 2s forwards;
+}
+
+.vertical-glass-bubble-2 {
+  width: 25px;
+  top: 0;
+  left: 12%;
+  border-radius: 0 0 60% 10%/0 0 25% 10%;
+  animation: show-vertical-bubbles-2 2s linear 2s forwards;
+}
+
+.logo-intro {
+  position: absolute;
+  z-index: 3;
+  height: 50px;
+  width: 90px;
+  background-image: url(./img/logo_antares_intro.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@keyframes fill-beer {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes show-bubbles {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes show-vertical-bubbles-1 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 150px;
+  }
+}
+@keyframes show-vertical-bubbles-2 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 110px;
+  }
+}
+@keyframes show-air-bubble-1 {
+  0% {
+    opacity: 0;
+    too: 0;
+  }
+  100% {
+    opacity: 1;
+    top: -20%;
+  }
+}
+@keyframes show-air-bubble-2 {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+  100% {
+    opacity: 1;
+    top: -30%;
   }
 }/*# sourceMappingURL=style.css.map */
