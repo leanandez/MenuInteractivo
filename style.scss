@@ -45,8 +45,8 @@ body {
 
 
             .nav-logo {
-                height: 100px;
-                width: 180px;
+                height: 5rem;
+                width: 10rem;
                 background-image: url(./img/logo_antares_negro.png);
                 background-position: center;
                 background-size: contain;
@@ -141,14 +141,13 @@ body {
 
             .card {
                 height: 200px;
-                width: 40%;
-                margin-top: 1rem;
+                width: 70%;
+                margin: 1rem 0.3rem;
                 padding: 1rem;
                 background-image: url(./img/low-poly-background-A8_generated.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
-                // border: 2px solid white;
                 box-shadow: 2px 2px gold;
                 border-radius: 10px;
                 display: flex;
@@ -156,12 +155,6 @@ body {
                 align-items: center;
                 justify-content: space-around;
 
-                a {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                }
 
                 .card-title {
                     margin-top: -30px;
@@ -287,6 +280,41 @@ body {
 
         .showModal {
             display: flex;
+        }
+
+        .modal-video {
+            position: fixed;
+            top: 2%;
+            left: 2%;
+            width: 95%;
+            height: 95%;
+            z-index: -7;
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+
+            iframe {
+                width: 90%;
+                height: 90%;
+            }
+
+            button {
+                position: absolute;
+                right: 2%;
+                top: 2%;
+                width: 10%;
+                height: 8%;
+                color: black;
+                background-color: var(--yellow);
+            }
+        }
+
+        .show-modal-video {
+            z-index: 7;
+            opacity: 1;
         }
 
         .title {
@@ -500,14 +528,15 @@ body {
                             font-size: 14px;
                         }
 
-                        #video {
+                        .video {
 
-                            width: 100%;
-                            height: 100%;
+                            height: 6rem;
+                            width: 90%;
+                            background-image: url(./img/antares-video.png);
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
 
-                            iframe {
-                                align-self: center;
-                            }
                         }
 
                     }
@@ -535,13 +564,14 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            font-family: 'Fjalla One', sans-serif;;
+            font-family: 'Fjalla One', sans-serif;
+            ;
             color: white;
             padding-top: 1rem;
-            
 
-            h4{
-                margin-bottom: -1.3rem ;
+
+            h4 {
+                margin-bottom: -1.3rem;
             }
         }
 
@@ -560,6 +590,7 @@ body {
 
         .maltas {
             background-image: url(./img/home-sierras.png);
+
             .maltas-png {
                 background-image: url(./img/home-malts.png);
                 background-position: center;
@@ -572,6 +603,7 @@ body {
 
         .historia {
             background-image: url(./img/home-mdq.png);
+
             .historia-png {
                 background-image: url(./img/home-history.png);
                 background-position: center;
@@ -656,7 +688,7 @@ body {
 
 
 // Intro Animacion
-.intro{
+.intro {
     background-color: black;
     margin: 0;
     padding: 0;
@@ -680,7 +712,8 @@ body {
     border: 8px solid white;
     border-radius: 0 0 20% 20% / 0 0 15% 15%;
 }
-#mug::before{
+
+#mug::before {
     content: "";
     height: 60%;
     width: 25%;
@@ -692,7 +725,7 @@ body {
 
 }
 
-#beer-intro{
+#beer-intro {
     margin: 0;
     padding: 0;
     position: absolute;
@@ -702,12 +735,14 @@ body {
     border-radius: 0 0 15% 15% / 0 0 10% 10%;
     animation: fill-beer 1s linear forwards;
 }
-.bubbles{
+
+.bubbles {
     position: absolute;
     background-color: white;
     border-radius: 50%;
 }
-.top-glass-bubble-1{
+
+.top-glass-bubble-1 {
     height: 45px;
     width: 65px;
     left: -15%;
@@ -715,7 +750,8 @@ body {
     opacity: 0;
     animation: show-bubbles 0.8s linear 1.2s forwards;
 }
-.top-glass-bubble-2{
+
+.top-glass-bubble-2 {
     height: 45px;
     width: 65px;
     left: 5%;
@@ -723,7 +759,8 @@ body {
     opacity: 0;
     animation: show-bubbles 0.8s linear 1.2s forwards;
 }
-.top-glass-bubble-3{
+
+.top-glass-bubble-3 {
     height: 55px;
     width: 50px;
     left: 43%;
@@ -731,7 +768,8 @@ body {
     opacity: 0;
     animation: show-bubbles 0.8s linear 1.2s forwards;
 }
-.top-glass-bubble-4{
+
+.top-glass-bubble-4 {
     height: 31px;
     width: 35px;
     left: 80%;
@@ -739,15 +777,17 @@ body {
     opacity: 0;
     animation: show-bubbles 0.8s linear 1.2s forwards;
 }
-.top-air-bubble-1{
+
+.top-air-bubble-1 {
     opacity: 0;
     height: 15px;
     width: 15px;
     left: 90%;
-   
+
     animation: show-air-bubble-1 2s linear 2s forwards;
 }
-.top-air-bubble-2{
+
+.top-air-bubble-2 {
     opacity: 0;
     height: 20px;
     width: 20px;
@@ -757,14 +797,15 @@ body {
 }
 
 
-.vertical-glass-bubble-1{
+.vertical-glass-bubble-1 {
     width: 25px;
     top: 0;
     left: -12%;
     border-radius: 0 0 60% 10% / 0 0 25% 20%;
     animation: show-vertical-bubbles-1 2s linear 2s forwards;
 }
-.vertical-glass-bubble-2{
+
+.vertical-glass-bubble-2 {
     width: 25px;
     top: 0;
     left: 12%;
@@ -772,8 +813,9 @@ body {
     animation: show-vertical-bubbles-2 2s linear 2s forwards;
 
 }
-.logo-intro{
-    position: absolute  ;
+
+.logo-intro {
+    position: absolute;
     z-index: 3;
     height: 50px;
     width: 90px;
@@ -781,74 +823,151 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-   
+
 }
 
-@keyframes hideIntro{
-    0%{
+@keyframes hideIntro {
+    0% {
         opacity: 1;
         z-index: 7;
     }
-    99%{
+
+    99% {
         opacity: 1;
         z-index: 7;
     }
-    100%{
+
+    100% {
         opacity: 0;
         z-index: -2;
     }
 }
 
-@keyframes fill-beer{
-    0%{
+@keyframes fill-beer {
+    0% {
         height: 0;
     }
-    100%{
+
+    100% {
         height: 100%;
     }
 }
 
-@keyframes show-bubbles{
-    0%{
+@keyframes show-bubbles {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
+
 @keyframes show-vertical-bubbles-1 {
-    0%{
+    0% {
         height: 0;
     }
-    100%{
+
+    100% {
         height: 150px;
     }
 }
+
 @keyframes show-vertical-bubbles-2 {
-    0%{
+    0% {
         height: 0;
     }
-    100%{
+
+    100% {
         height: 110px;
     }
 }
+
 @keyframes show-air-bubble-1 {
-    0%{
+    0% {
         opacity: 0;
         too: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
         top: -20%;
     }
 }
+
 @keyframes show-air-bubble-2 {
-    0%{
+    0% {
         opacity: 0;
         top: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
         top: -30%;
     }
+}
+
+
+@media screen and (min-width:768px) {
+    body {
+        .header {
+            height: 150px;
+        }
+
+        .cards-section {
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            .cards {
+                .card {
+                    width: 35%;
+                    height: 400px;
+                    margin: 2rem 0.1rem;
+                    padding: 2rem;
+
+                    .card-title {
+                        margin-bottom: 1rem;
+                    }
+
+                }
+            }
+        }
+
+        .itemDetail {
+            .pizarra {
+                height: 70vh;
+
+                .chart {
+                    .chart-cardflip {
+                        height: 205px;
+                    }
+                }
+            }
+
+            .item-detail-bottom {
+                .hops-header {
+                    height: 150px;
+                }
+
+                .bottom-frame {
+                    .chart-bottom {
+                        .description {
+                            width: 90%;
+                            p{
+                                font-size: 20px;
+                            }
+                            .video{
+                                height: 12rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
 }
